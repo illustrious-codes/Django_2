@@ -11,13 +11,14 @@
       <h2>Authors</h2>
       <ul>
         {% for author in authors %}
-        <li>{{ author.name }} /n {{ author.bio }}</li>
+        <li>{{ author.name }} <br />{{ author.bio }}</li>
         {% endfor %}
       </ul>
       <h2>Books</h2>
       <ul>
         {% for book in books %}
         <li>{{ book.title }} by {{ book.author.name }}</li>
+        <li>Created at {{ published_date }}</li>
         {% endfor %}
       </ul>
     </div>
